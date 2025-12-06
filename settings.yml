@@ -85,6 +85,11 @@ Header_links_for_not_login_user:
       </ul>
       <b>URL</b>: the desired URL you want the link to point to. <br>
       <b>Target</b>: same tab (self) or new tab (blank)."
+add_whitespace:
+  type: bool
+  default: false
+  description:
+    en: "Add spacing between default header icons and the custom icons from this component."
 hide_alerts:
   type: bool
   default: false
