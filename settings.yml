@@ -1,56 +1,98 @@
+group_set_1:
+  type: list
+  default: ""
+  description:
+    en: "show link set 1 for these groups"
+Header_links_set_1:
+  type: list
+  default: "Settings,gear,/admin/site_settings,vdo,self|Customize,paintbrush,/admin/customize/themes,vdo,self"
+  description:
+    en: "Link set 1, comma delimited in this order: <br>
+      <b>title, icon, URL, view, target</b>
+      <br>
+      <br>
+      <b>title</b>: the desired title you want the link to have (when hovered). <br>
+      <b>icon</b>: the icon you want the link to have. <br>
+      <b>View</b>:
+      <ul>
+      <li>visible on both desktop and mobile devices (vdm)</li>
+      <li>Desktop only (vdo).</li>
+      <li>mobile only (vmo).</li>
+      </ul>
+      <b>URL</b>: the desired URL you want the link to point to. <br>
+      <b>Target</b>: same tab (self) or new tab (blank)."
+group_set_2:
+  type: list
+  default: ""
+  description:
+    en: "show link set2 for these groups"
+Header_links_set_2:
+  type: list
+  default: ""
+  description:
+    en: "Link set 2, comma delimited in this order: <br>
+      <b>title, icon, URL, view, target</b>
+      <br>
+      <br>
+      <b>title</b>: the desired title you want the link to have (when hovered). <br>
+      <b>icon</b>: the icon you want the link to have. <br>
+      <b>View</b>:
+      <ul>
+      <li>visible on both desktop and mobile devices (vdm)</li>
+      <li>Desktop only (vdo).</li>
+      <li>mobile only (vmo).</li>
+      </ul>
+      <b>URL</b>: the desired URL you want the link to point to. <br>
+      <b>Target</b>: same tab (self) or new tab (blank)."
+exclude_group:
+  type: list
+  default: ""
+  description:
+    en: "Show links_for_other_group for groups other then these groups."
+Header_links_for_other_group:
+  type: list
+  default: ""
+  description:
+    en: "Links_for_other_group,comma delimited in this order: <br>
+      <b>title, icon, URL, view, target</b>
+      <br>
+      <br>
+      <b>title</b>: the desired title you want the link to have (when hovered). <br>
+      <b>icon</b>: the icon you want the link to have. <br>
+      <b>View</b>:
+      <ul>
+      <li>visible on both desktop and mobile devices (vdm)</li>
+      <li>Desktop only (vdo).</li>
+      <li>mobile only (vmo).</li>
+      </ul>
+      <b>URL</b>: the desired URL you want the link to point to. <br>
+      <b>Target</b>: same tab (self) or new tab (blank)."
+Header_links_for_not_login_user:
+  type: list
+  default: "tags,tags,/tags,vdm,self"
+  description:
+    en: "Link set for non-logged-in users, comma delimited in this order: <br>
+      <b>title, icon, URL, view, target</b>
+      <br>
+      <br>
+      <b>title</b>: the desired title you want the link to have (when hovered). <br>
+      <b>icon</b>: the icon you want the link to have. <br>
+      <b>View</b>:
+      <ul>
+      <li>visible on both desktop and mobile devices (vdm)</li>
+      <li>Desktop only (vdo).</li>
+      <li>mobile only (vmo).</li>
+      </ul>
+      <b>URL</b>: the desired URL you want the link to point to. <br>
+      <b>Target</b>: same tab (self) or new tab (blank)."
 add_whitespace:
   type: bool
   default: false
-svg_icons:
+  description:
+    en: "Add spacing between default header icons and the custom icons from this component."
+Svg_icons:
   type: "list"
   list_type: "compact"
-  default: "fab-facebook|fab-twitter"
-header_links:
-  type: objects
-  default:
-    - title: "Desktop and mobile link"
-      icon: "fab-facebook"
-      url: "https://facebook.com"
-      view: "vdm"
-      target: "blank"
-    - title: "Mobile-only link"
-      icon: "fab-twitter"
-      url: "https://twitter.com"
-      view: "vmo"
-      target: "blank"
-  schema:
-    name: "link"
-    properties:
-      title:
-        type: string
-        required: true
-        validations:
-          min_length: 1
-          max_length: 1000
-      icon:
-        type: string
-        required: true
-        validations:
-          min_length: 1
-          max_length: 2048
-      url:
-        type: string
-        required: true
-        validations:
-          min_length: 1
-          max_length: 2048
-          url: true
-      view:
-        type: enum
-        choices:
-          - vdm
-          - vdo
-          - vmo
-      width:
-        type: integer
-        required: false
-      target:
-        type: enum
-        choices:
-          - blank
-          - self
+  default: ""
+  description:
+    en: "Include FontAwesome 5 icon classes for each icon used in the list."

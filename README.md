@@ -1,5 +1,3 @@
-# Discourse header links theme component
+# Group specific tool bar
 
-A theme component that adds linked icons to the header
-
-More information: https://meta.discourse.org/t/iconified-header-links/86307
+A Discourse theme component. Adds different set of header icons for specified group.
