@@ -19,3 +19,22 @@
     display: none;
   }
 }
+// whitespace
+@if $add_whitespace == "true" {
+  .desktop-view:not(.anon) {
+    .last-custom-icon {
+      margin-right: 2.5em;
+    }
+
+    &.rtl {
+      .last-custom-icon {
+        margin-right: 0;
+        margin-left: 2.5em;
+      }
+    }
+  }
+}
+
+.custom-header-icon-link img {
+  width: 100%;
+}
