@@ -5,7 +5,7 @@ group_set_1:
     en: "show link set 1 for these groups"
 Header_links_set_1:
   type: list
-  default: "Settings,cog,/admin/site_settings,vdo,self|Customize,paint-brush,/admin/customize/themes,vdo,self|Texts,paragraph,/admin/customize/site_texts,vdo,self"
+  default: "Settings,gear,/admin/site_settings,vdo,self|Customize,paintbrush,/admin/customize/themes,vdo,self"
   description:
     en: "Link set 1, comma delimited in this order: <br>
       <b>title, icon, URL, view, target</b>
@@ -28,7 +28,7 @@ group_set_2:
     en: "show link set2 for these groups"
 Header_links_set_2:
   type: list
-  default: "Settings,cog,/admin/site_settings,vdo,self|Customize,paint-brush,/admin/customize/themes,vdo,self|Texts,paragraph,/admin/customize/site_texts,vdo,self"
+  default: ""
   description:
     en: "Link set 2, comma delimited in this order: <br>
       <b>title, icon, URL, view, target</b>
@@ -51,7 +51,7 @@ exclude_group:
     en: "Show links_for_other_group for groups other then these groups."
 Header_links_for_other_group:
   type: list
-  default: "Settings,cog,/admin/site_settings,vdo,self|Customize,paint-brush,/admin/customize/themes,vdo,self|Texts,paragraph,/admin/customize/site_texts,vdo,self"
+  default: ""
   description:
     en: "Links_for_other_group,comma delimited in this order: <br>
       <b>title, icon, URL, view, target</b>
@@ -90,14 +90,9 @@ add_whitespace:
   default: false
   description:
     en: "Add spacing between default header icons and the custom icons from this component."
-hide_alerts:
-  type: bool
-  default: false
-  description:
-    en: "Hide all alert banners and notifications"
 Svg_icons:
   type: "list"
   list_type: "compact"
-  default: "paint-brush|paragraph"
+  default: ""
   description:
     en: "Include FontAwesome 5 icon classes for each icon used in the list."

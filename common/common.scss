@@ -10,15 +10,6 @@
   }
 }
 
-@if $hide_alerts == "true" {
-  #global-notice-alert-wizard,
-  #global-notice-alert-bootstrap-mode,
-  .profiler-results,
-  .alert.consent_banner,
-  .alert.alert-too-few-topics {
-    display: none;
-  }
-}
 // whitespace
 @if $add_whitespace == "true" {
   .desktop-view:not(.anon) {
